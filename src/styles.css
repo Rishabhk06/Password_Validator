@@ -1,0 +1,101 @@
+body {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.PasswordBoxParent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PasswordBox {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  border-radius: 20px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.PasswordPoliciesParent {
+  background-color: rgb(204, 193, 193);
+  width: 350px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.conditionTrue {
+  margin: 0;
+  padding: 10px;
+  color: green;
+}
+
+.conditionFalse {
+  margin: 0;
+  padding: 10px;
+  color: red;
+}
+
+.checkIcon {
+  float: right;
+}
+
+.timesIcon {
+  float: right;
+}
+
+/* Jab conditionfalse ho to check(tick) wala icon hat jaye */
+.conditionFalse .checkIcon {
+  display: none;
+}
+
+/* Jab condition true ho to cross wala icon hat jaye */
+.conditionTrue .timesIcon {
+  display: none;
+}
+
+.show .eyebtn {
+  position: absolute;
+  height: 55px;
+  margin-left: 310px;
+  font-size: 30px;
+  cursor: grab;
+}
+
+.show .eyeslashbtn {
+  display: none;
+}
+
+.hide .eyebtn {
+  display: none;
+}
+
+.hide .eyeslashbtn {
+  position: absolute;
+  height: 55px;
+  margin-left: 310px;
+  font-size: 30px;
+  cursor: grab;
+}
+
+.heading {
+  text-align: center;
+  font-size: 48px;
+  text-decoration: underline;
+}
